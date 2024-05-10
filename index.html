@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .status {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .status i {
+            margin-right: 5px;
+        }
+        .status.online {
+            color: green;
+        }
+        .status.offline {
+            color: red;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .section p {
+            color: #666;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        .server-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .server-status .status {
+            flex-grow: 1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer a {
+            color: #777;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #333;
+        }
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-server icon"></i>Server Status</h1>
+        <div class="server-status">
+            <div class="status online" id="serverStatus"><i class="fas fa-check"></i>All Developers is Online</div>
+        </div>
+        <p>Details about your server status or any updates can go here.</p>
+        
+        <div class="section">
+            <h2><i class="fas fa-users icon"></i>Game Queue</h2>
+            <p><i class="fas fa-percentage icon"></i>Queue: <span id="queuePercentage">0%</span></p>
+        </div>
+
+        <div class="section">
+    <h2><i class="fas fa-server icon"></i>Server Information</h2>
+    <p>Here's some detailed information about our servers:</p>
+    <ul>
+        <li><i class="fas fa-globe icon"></i>Simulator: Available</li>
+        <li><i class="fas fa-globe icon"></i>Fighting: Available</li>
+    </ul>
+    <p>Additional details:</p>
+    <ul>
+        <li><i class="fas fa-check-circle icon"></i> Server Queue: Low</li>
+        <li><i class="fas fa-check-circle icon"></i> Game Developers: 2</li>
+        <li><i class="fas fa-check-circle icon"></i> Server Version: 1.0</li>
+        </ul>
+       </div>
+        <div class="footer">
+            <p>&copy; 2024 Server Status - Powered by Github</p>
+        </div>
+    </div>
+</script>
+</body>
+  </html>
